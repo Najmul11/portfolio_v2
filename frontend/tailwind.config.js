@@ -21,7 +21,7 @@ export default {
         node: "#76ae5c",
         tailwind: "#38bdf8",
         mongo: "#3c912e",
-        prisma: "#0c3249",
+        prisma: "#5762CD",
         redis: "#d5362c",
         postgre: "#31648c",
         // typography
@@ -45,9 +45,9 @@ export default {
 
       backgroundImage: {
         profile: "url('/src/assets//profile.jpg')",
-        imagenius: "url('/src/assets/project1.png')",
-        comic: "url('/src/assets/project2.png')",
-        skill: "url('/src/assets/project3.png')",
+        learnify: "url('/src/assets/project1.png')",
+        imagenius: "url('/src/assets/project2.png')",
+        comic: "url('/src/assets/project3.png')",
         fragma: "url('/src/assets/project4.png')",
       },
       transitionDuration: {

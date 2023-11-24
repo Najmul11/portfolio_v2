@@ -1,36 +1,40 @@
 import { Link } from "react-router-dom";
-import { FiArrowUpRight } from "react-icons/fi";
-import { MdOutlineCode } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { LuVideo } from "react-icons/lu";
+import { PiArrowSquareOut } from "react-icons/pi";
 
 type IProps = {
   live: string;
-  frontend: string;
-  backend: string;
+  code: string;
+  video: string;
 };
 
-const Icons = ({ live, frontend, backend }: IProps) => {
+const Icons = ({ live, code, video }: IProps) => {
   return (
-    <div className="flex justify-center gap-10 text-xl font-semi">
+    <div className="flex justify-center lg:justify-end  text-xl font-semi lg:text-right gap-6 items-center">
+      {video && (
+        <Link
+          to={video}
+          target="_blank"
+          className="flex items-center gap-1 hover:text-highlight mt-[2px]"
+        >
+          <LuVideo className="text-[24px]" />
+        </Link>
+      )}
+      <Link
+        to={code}
+        target="_blank"
+        className="flex items-center gap-1 hover:text-highlight"
+      >
+        <FaGithub />
+      </Link>
+
       <Link
         to={live}
         target="_blank"
-        className="flex items-center gap-1 hover:text-ts"
+        className="flex items-center gap-1 hover:text-highlight"
       >
-        <FiArrowUpRight /> <span className="text-sm">Live</span>
-      </Link>
-      <Link
-        to={frontend}
-        target="_blank"
-        className="flex items-center gap-1 hover:text-ts"
-      >
-        <MdOutlineCode /> <span className="text-sm">Frontend</span>
-      </Link>
-      <Link
-        to={backend}
-        target="_blank"
-        className="flex items-center gap-1 hover:text-ts"
-      >
-        <MdOutlineCode /> <span className="text-sm">Backend</span>
+        <PiArrowSquareOut className="text-[24px]" />
       </Link>
     </div>
   );

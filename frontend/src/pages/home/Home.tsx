@@ -6,7 +6,7 @@ import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 
 const Home = () => {
-  useTitle("Najmul Hoque", "Web Developer");
+  useTitle("Najmul Hoque");
   return (
     <div>
       <Intro />

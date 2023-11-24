@@ -55,7 +55,7 @@ export const backend = [
     icon: <BiLogoMongodb className="text-5xl text-mongo" />,
   },
   {
-    title: "Postgre",
+    title: "PostgreSQL",
     icon: <BiLogoPostgresql className="text-5xl text-postgre" />,
   },
   {
