@@ -101,7 +101,7 @@ const Form = () => {
           />
         </div>
         <div>
-          <button className="py-3 px-8 border border-[#84ecfa] text-[#84ecfa] rounded text-sm hover:bg-LightNavy duration-200 overflow-hidden ">
+          <button className="py-3 px-8 border border-[#84ecfa] text-[#84ecfa] rounded text-md hover:bg-LightNavy duration-200 overflow-hidden font-mono">
             {isLoading ? (
               <ScaleLoader width={3} height={10} color="#84ecfa" />
             ) : (

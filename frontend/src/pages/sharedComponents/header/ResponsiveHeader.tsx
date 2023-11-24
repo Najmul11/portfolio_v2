@@ -7,7 +7,7 @@ import { BiHomeSmile } from "react-icons/bi";
 const ResponsiveHeader = ({ journal }: { journal: boolean }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   return (
-    <div className="relative lg:hidden z-[1000] bg-red-500">
+    <div className="relative lg:hidden z-[1000]">
       <div className="flex justify-between items-center p-4 lg:hidden fixed bottom-0 w-full bg-white border-t  ">
         <div>
           {!showMenu ? <h1 className="text-xl font-semi">Najmul</h1> : " "}

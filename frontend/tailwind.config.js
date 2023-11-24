@@ -5,7 +5,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins", "sans-serif", "sfMono"],
+        mono: [
+          "SF Mono",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
+        ],
       },
 
       fontWeight: {
@@ -44,37 +53,20 @@ export default {
       },
 
       backgroundImage: {
-        profile: "url('/src/assets//profile.jpg')",
+        icons: "url('/src/assets/mainIconsdark.svg')",
+        profile: "url('/src/assets/profile.jpg')",
         learnify: "url('/src/assets/project1.png')",
         imagenius: "url('/src/assets/project2.png')",
         comic: "url('/src/assets/project3.png')",
         fragma: "url('/src/assets/project4.png')",
       },
-      transitionDuration: {
-        eight: "8000ms",
-      },
+
       boxShadow: {
         "white-inset": "inset 0 0 0 7px rgba(255, 255, 255, 0.3)",
       },
-      animation: {
-        radius: "radius 10s ease-in-out infinite ",
-      },
+
       width: {
         project: "500px",
-      },
-
-      keyframes: {
-        radius: {
-          "0%": {
-            "border-radius": "60% 40% 30% 70%/60% 30% 70% 40%",
-          },
-          "50%": {
-            "border-radius": "30% 60% 70% 40%/50% 60% 30% 60%",
-          },
-          "100%": {
-            "border-radius": "60% 40% 30% 70%/60% 30% 70% 40%",
-          },
-        },
       },
     },
   },
