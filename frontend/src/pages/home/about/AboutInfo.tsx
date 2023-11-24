@@ -4,7 +4,7 @@ import { aboutInfo, resume } from "../../customization/AboutInfoText";
 const AboutInfo = () => {
   return (
     <div className="lg:w-1/2 lg:h-80 flex flex-col justify-center gap-20">
-      <p className="text-md lg:w-[80%]">{aboutInfo}</p>
+      <p className="text-md lg:w-[80%] text-second">{aboutInfo}</p>
       <div>
         <Link
           to={resume}

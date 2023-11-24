@@ -1,19 +1,19 @@
 html {
-  background-color: #f1f6fb;
+  background-color: #0f172a;
   scroll-behavior: smooth;
+  color: #ccd6f6;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f6fb;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #31373d;
-  border-radius: 3px;
+  background: #303c55;
 }
 
 ::-webkit-scrollbar-thumb:hover {

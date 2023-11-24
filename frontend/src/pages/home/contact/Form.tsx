@@ -3,7 +3,7 @@ import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { contactSchema } from "../../../yup/Schemas";
 import { usePostEmailMutation } from "../../../redux/api/apiSlice";
-import { PropagateLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
 import toast from "react-hot-toast";
 
 interface FormData {
@@ -38,7 +38,7 @@ const Form = () => {
         <div className="relative h-12">
           <label
             htmlFor="name"
-            className={`absolute -top-3 left-5 z-10 bg-bg rounded-xl px-3 text-sm font-semi  ${
+            className={`absolute -top-2 left-2 z-10 bg-bg rounded px-1 text-xs font-semi  ${
               formState.errors.name ? "text-red-500" : ""
             }`}
           >
@@ -52,7 +52,7 @@ const Form = () => {
               <input
                 {...field}
                 type="text"
-                className="absolute top-0 left-0 border-gray-300 px-8 border bg-transparent rounded-lg h-full w-full lg:w-96 focus:outline-none"
+                className="absolute top-0 left-0 border-LightNavy px-3 border bg-transparent rounded h-full w-full lg:w-96 focus:outline-none text-second"
               />
             )}
           />
@@ -60,7 +60,7 @@ const Form = () => {
         <div className="relative h-12">
           <label
             htmlFor="email"
-            className={`absolute -top-3 left-5 z-10 bg-bg rounded-xl px-3 text-sm font-semi  ${
+            className={`absolute -top-2 left-2 z-10 bg-bg rounded px-1 text-xs font-semi  ${
               formState.errors.email ? "text-red-500" : ""
             }`}
           >
@@ -74,7 +74,7 @@ const Form = () => {
               <input
                 {...field}
                 type="text"
-                className="absolute top-0 left-0 px-8 border border-gray-300 bg-transparent rounded-lg h-full w-full lg:w-96 focus:outline-none"
+                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full lg:w-96 focus:outline-none text-second"
               />
             )}
           />
@@ -82,7 +82,7 @@ const Form = () => {
         <div className="relative h-28">
           <label
             htmlFor="project"
-            className={`absolute -top-3 left-5 z-10 bg-bg rounded-xl px-3 text-sm font-semi  ${
+            className={`absolute -top-2 left-2 z-10 bg-bg rounded px-1 text-xs font-semi  ${
               formState.errors.email ? "text-red-500" : ""
             }`}
           >
@@ -95,22 +95,15 @@ const Form = () => {
             render={({ field }) => (
               <textarea
                 {...field}
-                className="absolute top-0 left-0 px-8 border border-gray-300 bg-transparent rounded-lg h-full w-full lg:w-96 focus:outline-none resize-none py-2"
+                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full lg:w-96 focus:outline-none resize-none py-2 text-second"
               />
             )}
           />
         </div>
         <div>
-          <button
-            type="submit"
-            className="px-8 overflow-hidden   py-2 bg-ts bg-opacity-90 hover:bg-opacity-100 duration-200 text-white rounded-lg font-semi"
-          >
+          <button className="py-3 px-8 border border-[#84ecfa] text-[#84ecfa] rounded text-sm hover:bg-LightNavy duration-200 overflow-hidden ">
             {isLoading ? (
-              <PropagateLoader
-                className="w-[41px] h-3"
-                color="#FFFFFF"
-                loading
-              />
+              <ScaleLoader width={3} height={10} color="#84ecfa" />
             ) : (
               "Send"
             )}

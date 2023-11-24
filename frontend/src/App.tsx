@@ -6,6 +6,7 @@ import { setUser } from "./redux/slices/userSlice";
 import jwtDecode from "jwt-decode";
 import { useAppDispatch } from "./redux/hooks";
 import ScrollTopAuto from "./pages/sharedComponents/scrollToTopAuto/ScrollTopAuto";
+import CursorGlow from "./pages/sharedComponents/CursorGlow/CursorGlow";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <ScrollTopAuto />
+      <CursorGlow />
       <Toaster />
       <Outlet />
     </>

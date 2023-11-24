@@ -12,9 +12,9 @@ export default {
         semi: "500",
       },
       colors: {
+        // icon
         ts: "#2f74c0",
         opacity: "#e5edf6",
-        bg: "#f1f6fb",
         js: "#f5d032",
         react: "#61dafb",
         sass: "#c66394",
@@ -24,6 +24,15 @@ export default {
         prisma: "#0c3249",
         redis: "#d5362c",
         postgre: "#31648c",
+        // typography
+        primary: "#ccd6f6",
+        second: "#8892B0",
+        highlight: "#84ecfa",
+        // background
+        bg: "#0f172a",
+        LightNavy: "#172a45",
+        LightestNavy: "#303C55",
+        LightSlate: "#a8b2d1",
       },
 
       screens: {
