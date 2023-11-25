@@ -11,8 +11,10 @@ const NpxCard = () => {
         </h2>
       </div>
       <div className="flex justify-center">
-        <button className="py-3 px-5 bg-LightNavy  text-highlight group active:bg-LightestNavy rounded text-md duration-200 font-mono active:text-red-500 hover:bg-LightestNavy">
-          <span className="text-red-500 group-active:text-highlight">npx</span>{" "}
+        <button
+          className={` py-3 px-5 bg-LightNavy  text-highlight group active:bg-LightestNavy rounded text-md duration-200 font-mono active:text-red-500 hover:bg-LightestNavy relative`}
+        >
+          <span className="text-red-500 group-active:text-highlight">npx </span>
           najmul
         </button>
       </div>
@@ -21,4 +23,3 @@ const NpxCard = () => {
 };
 
 export default NpxCard;
-// border-[#84bdfa]

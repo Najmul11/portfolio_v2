@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-auth bg-no-repeat bg-center bg-cover">
       <div className="flex justify-center">
-        <div className="bg-white mt-16 lg:mt-20 px-10 pt-10 pb-5">
+        <div className="mt-16 lg:mt-20 px-10 pt-10 pb-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex gap-4 flex-col pt-8"
@@ -56,7 +56,7 @@ const Login = () => {
             <div className="flex flex-col gap-10">
               <div className="relative h-12 w-96">
                 <label
-                  className={`absolute -top-3 left-5 z-30 bg-white px-3 text-sm font-semi ${
+                  className={`absolute -top-3 left-2 z-30 bg-bg px-1 text-sm font-semi ${
                     formState.errors.email ? "text-red-500" : ""
                   }`}
                 >
@@ -73,7 +73,7 @@ const Login = () => {
                       {...field}
                       type="text"
                       placeholder="Email Address"
-                      className="absolute top-0 left-0 px-8 border bg-transparent rounded-lg h-full w-full lg:w-96 focus:outline-none"
+                      className="absolute top-0 left-0 px-3 border bg-transparent rounded h-full w-full lg:w-96 focus:outline-none"
                     />
                   )}
                 />
@@ -81,7 +81,7 @@ const Login = () => {
               <div>
                 <div className="relative h-12">
                   <label
-                    className={`absolute -top-3 left-5 z-30 bg-white px-3 text-sm font-semi ${
+                    className={`absolute -top-3 left-2 z-30 bg-bg px-1 text-sm font-semi ${
                       formState.errors.password ? "text-red-500" : ""
                     }`}
                   >
@@ -98,7 +98,7 @@ const Login = () => {
                         {...field}
                         type="password"
                         placeholder="Password"
-                        className="absolute top-0 left-0 px-8 border bg-transparent rounded-lg h-full w-full lg:w-96 focus:outline-none"
+                        className="absolute top-0 left-0 px-3 border bg-transparent rounded h-full w-full lg:w-96 focus:outline-none"
                       />
                     )}
                   />
@@ -109,7 +109,7 @@ const Login = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="px-8 h-12 text-white w-full bg-black bg-opacity-90 hover:bg-opacity-100 duration-200 rounded-lg font-semi"
+                className="px-8 h-12 text-highlight hover:bg-LightNavy  w-full border border-highlight bg-opacity-90 hover:bg-opacity-100 duration-200 rounded font-semi"
               >
                 Sign In
               </button>

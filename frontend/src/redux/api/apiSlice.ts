@@ -34,6 +34,14 @@ export const api = createApi({
       providesTags: ["posts"],
     }),
 
+    getSinglePost: builder.query({
+      query: (id) => ({
+        url: `/posts/get-single-post/${id}`,
+        method: "Get",
+      }),
+      providesTags: ["posts"],
+    }),
+
     addPost: builder.mutation({
       query: ({ data, accessToken }) => ({
         url: `/posts/add-post`,
@@ -97,4 +105,5 @@ export const {
   useGetAllPostsQuery,
   useDeletePostMutation,
   useStarPostMutation,
+  useGetSinglePostQuery,
 } = api;

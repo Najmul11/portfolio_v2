@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useAppSelector } from "../../redux/hooks";
-import { PropagateLoader } from "react-spinners";
 import {
   useDeletePostMutation,
   useGetAllPostsQuery,
@@ -14,6 +13,7 @@ import LightBox from "./lightbox/Lightbox";
 import Actions from "./actions/Actions";
 import PostInfo from "./post/PostInfo";
 import PostImage from "./post/PostImage";
+import { ScaleLoader } from "react-spinners";
 
 type IPost = {
   _id: string;
@@ -85,13 +85,12 @@ const Journal = () => {
     setlightboxSrc(src);
     settoggleLightbox(true);
   };
-  console.log(data?.data);
 
   return (
     <>
       {postLoading ? (
         <div className=" h-screen flex items-center justify-center w-full">
-          <PropagateLoader color="#000000" loading className="my-5" />
+          <ScaleLoader width={3} height={15} color="#84ecfa" />
         </div>
       ) : (
         <div className="pb-10">
@@ -104,22 +103,27 @@ const Journal = () => {
             <button
               onClick={() => setStar(!star)}
               className={`${
-                star ? "text-ts" : ""
+                star ? "text-highlight " : "hover:text-second"
               } font-semo flex items-center gap-2`}
             >
               {star ? <AiFillStar /> : <AiOutlineStar />}
               Favourites
             </button>
           </div>
-          <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-5 space-y-5 px-4 my-10">
+          <div className="columns-1 md:columns-2  gap-5 space-y-5 lg:mx-[10%] px-4 my-10">
             {data?.data?.map((post: IPost, index: number) => (
-              <div key={index} className=" w-full  break-inside-avoid-column">
-                <div className="flex flex-col  gap-5 mx-auto  rounded-lg shadow-md bg-opacity w-full ">
-                  <PostImage
-                    handleLightbox={handleLightbox}
-                    src={post?.image?.photoUrl}
-                  />
-                  <div className="p-2 flex flex-col  gap-5 ">
+              <div
+                key={index}
+                className=" w-full  break-inside-avoid-column  p-5 hover:bg-LightNavy shadow-md cursor-pointer duration-500 rounded group "
+              >
+                <div className="flex gap-5 flex-col lg:flex-row">
+                  <div className="lg:w-28 lg:h-20 flex-shrink-0">
+                    <PostImage
+                      handleLightbox={handleLightbox}
+                      src={post?.image?.photoUrl}
+                    />
+                  </div>
+                  <div className="flex-grow flex flex-col gap-5">
                     <PostInfo
                       details={post.details}
                       title={post.title}
@@ -129,8 +133,8 @@ const Journal = () => {
                       handleDelete={handleDelete}
                       handleStar={handleStar}
                       isLoading={isLoading}
-                      post={post}
                       starLoad={starLoad}
+                      post={post}
                     />
                   </div>
                 </div>

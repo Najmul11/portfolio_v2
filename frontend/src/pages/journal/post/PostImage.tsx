@@ -6,13 +6,12 @@ const PostImage = ({
   src: string;
 }) => {
   return (
-    <div className=" w-full" onClick={() => handleLightbox(src)}>
-      <img
-        src={src}
-        alt=""
-        className=" w-full h-64 rounded-lg cursor-pointer"
-      />
-    </div>
+    <img
+      src={src}
+      alt=""
+      onClick={() => handleLightbox(src)}
+      className="w-56 h-36 lg:w-28 lg:h-20 rounded cursor-pointer"
+    />
   );
 };
 

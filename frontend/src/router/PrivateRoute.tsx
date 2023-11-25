@@ -2,7 +2,7 @@ import { Navigate, useLocation } from "react-router-dom";
 import { ReactNode } from "react";
 import { useAppSelector } from "../redux/hooks";
 import { useGetProfileQuery } from "../redux/api/apiSlice";
-import { PropagateLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
 
 type IProps = {
   children: ReactNode;
@@ -17,7 +17,7 @@ const PrivateRoute = ({ children }: IProps) => {
   if (isLoading) {
     return (
       <div className="flex h-screen justify-center items-center">
-        <PropagateLoader color="#000000" loading />
+        <ScaleLoader width={3} height={15} color="#84ecfa" />
       </div>
     );
   }

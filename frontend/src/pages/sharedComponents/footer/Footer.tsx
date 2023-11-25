@@ -1,68 +1,28 @@
-import { useEffect, useState } from "react";
-import { FiGithub, FiMail } from "react-icons/fi";
-import { PiLinkedinLogoBold } from "react-icons/pi";
-import { BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import {
-  github,
-  linkedIn,
-  mail,
-  whatsapp,
-} from "../../customization/AboutInfoText";
-
-import sign from "../../../assets/sign.png";
+import { github } from "../../customization/AboutInfoText";
+import SideIcons from "../sideIcons/SideIcons";
 
 const Footer = () => {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentYear(new Date().getFullYear());
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
   return (
-    <div className="border-t bg-opacity bg-opacity-40">
-      <div className="lg:w-4/6 lg:mx-[16.67%] py-10 mb-14 lg:mb-0 flex flex-col gap-10 ">
-        <div className="flex justify-center">
-          <img src={sign} alt="" className="w-32" />
-        </div>
-        <div className="flex justify-center gap-5">
-          <Link
-            to={github}
-            target="_blank"
-            className="shadow-md p-2 rounded-full hover:text-ts duration-200  "
-          >
-            <FiGithub className="text-2xl" />
-          </Link>
-          <Link
-            target="_blank"
-            to={linkedIn}
-            className="shadow-md p-2 rounded-full hover:text-ts duration-200  "
-          >
-            <PiLinkedinLogoBold className="text-2xl" />
-          </Link>
-
-          <Link
-            to={mail}
-            target="_blank"
-            className="shadow-md p-2 rounded-full hover:text-ts duration-200  "
-          >
-            <FiMail className="text-2xl" />
-          </Link>
-          <Link
-            to={whatsapp}
-            target="_blank"
-            className="shadow-md p-2 rounded-full hover:text-ts duration-200  "
-          >
-            <BsWhatsapp className="text-2xl" />
-          </Link>
-        </div>
-        <p className="text-center text-sm font-semi">
-          &copy; {currentYear}, All Rights Reserved.
-        </p>
+    <div className="pt-32 pb-5 flex flex-col gap-3 mb-12 lg:mb-0 ">
+      <SideIcons isFooter={true} />
+      <div className=" font-mono text-second text-[13px] flex flex-col lg:flex-row items-center justify-center ">
+        <Link
+          to={"https://github.com/bchiang7/v4"}
+          className="hover:text-highlight duration-200"
+        >
+          Inspired From Brittany Chiang |
+        </Link>{" "}
+        <Link
+          to={github}
+          className="hover:text-highlight duration-200 mr-5 lg:mr-0"
+        >
+          &nbsp;&nbsp;| Designed & Built by Najmul
+        </Link>{" "}
       </div>
+      <p className="text-second font-mono text-[13px] text-center">
+        Last Updated on: 16-Sep-2022
+      </p>
     </div>
   );
 };

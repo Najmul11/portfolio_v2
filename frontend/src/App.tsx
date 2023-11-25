@@ -7,6 +7,7 @@ import jwtDecode from "jwt-decode";
 import { useAppDispatch } from "./redux/hooks";
 import ScrollTopAuto from "./pages/sharedComponents/scrollToTopAuto/ScrollTopAuto";
 import CursorGlow from "./pages/sharedComponents/CursorGlow/CursorGlow";
+import SideIcons from "./pages/sharedComponents/sideIcons/SideIcons";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -29,6 +30,7 @@ function App() {
     <>
       <ScrollTopAuto />
       <CursorGlow />
+      <SideIcons />
       <Toaster />
       <Outlet />
     </>

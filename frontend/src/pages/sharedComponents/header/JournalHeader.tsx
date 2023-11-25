@@ -8,7 +8,7 @@ const JournalHeader = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="mx-auto lg:w-4/6">
+    <div className="lg:mx-[3%] pt-1 lg:pt-3 pb-3">
       <div className="flex justify-between items-center h-14 px-4 lg:px-0">
         <Link to={"/dashboard"} className=" hidden lg:block">
           {" "}
@@ -19,7 +19,7 @@ const JournalHeader = () => {
             onChange={(e) => dispatch(setSearch(e.target.value))}
             type="text"
             placeholder="Can't remember? Recall..."
-            className=" py-2 px-4 w-full lg:w-80 text-sm placeholder:text-center focus:outline-none bg-opacity rounded-xl"
+            className=" py-2 px-4 w-full lg:w-80 text-sm placeholder:text-center focus:outline-none bg-opacity rounded text-bg"
           />
         </div>
         <ul className="hidden lg:flex font-semi text-sm  justify-end ">
@@ -30,7 +30,7 @@ const JournalHeader = () => {
                 {title === "Home" && (
                   <Link
                     to={"/"}
-                    className="flex items-center gap-1 hover:text-ts"
+                    className="flex items-center gap-1 hover:text-highlight"
                   >
                     {icon} {title}
                   </Link>

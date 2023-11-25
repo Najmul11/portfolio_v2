@@ -5,7 +5,7 @@ const IntroDetails = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-0 justify-between items-center w-full ">
       <div className=" lg:w-1/2">
-        <div className="lg:w-[80%] mx-auto">
+        <div className="md:w-[60%] lg:w-[80%] mx-auto">
           <h1 className="text-4xl lg:text-5xl font-semibold ">Najmul Hoque</h1>
 
           <div className="flex gap-2 items-center my-3 text-second">
@@ -20,7 +20,7 @@ const IntroDetails = () => {
             <div>
               <Link
                 to={mail}
-                className="py-3 px-8 border border-highlight text-highlight font-thin text-md hover:bg-LightNavy font-mono rounded"
+                className="py-3 px-8 border border-highlight text-highlight font-thin text-md hover:bg-LightNavy font-mono rounded active:bg-LightestNavy"
               >
                 Get In Touch
               </Link>

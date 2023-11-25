@@ -47,40 +47,51 @@ const Header = () => {
   }, [prevScrollPos]);
 
   return (
-    <div className={`${bg} z-20 fixed w-full duration-100`} style={headerStyle}>
-      <div className="hidden lg:block lg:mx-[3%]">
-        <div className="flex justify-between items-center h-14">
-          <Link to={"/"}>
-            <h1 className="text-lg font-semi">Najmul</h1>
-          </Link>
-          <ul className="flex gap-10 font-semi text-sm">
-            {menus.map((menu, index) => {
-              const { title, icon, id } = menu;
-              return (
-                <li key={index}>
-                  {title === "Journal" ? (
-                    <Link
-                      to={id}
-                      className="flex items-center gap-1  hover:text-ts"
-                    >
-                      {icon} {title}
-                    </Link>
-                  ) : (
-                    <a
-                      href={`#${id}`}
-                      className="flex items-center gap-1 hover:text-ts"
-                    >
-                      {title}
-                    </a>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+    <>
+      <div
+        className={`${bg} z-20 fixed w-full duration-100`}
+        style={headerStyle}
+      >
+        <div className="hidden lg:block lg:mx-[3%]">
+          <div className="flex justify-between items-center pt-5 pb-3">
+            <Link to={"/"}>
+              <h1 className="text-lg font-semi">Najmul</h1>
+            </Link>
+            <ul className="flex gap-8 font-semi text-sm items-center">
+              {menus.map((menu, index) => {
+                const { title, icon, id } = menu;
+                return (
+                  <li key={index}>
+                    {title === "Journal" ? (
+                      <Link
+                        to={id}
+                        className="flex items-center gap-1  hover:text-highlight "
+                      >
+                        {icon} {title}
+                      </Link>
+                    ) : (
+                      <a
+                        href={`#${id}`}
+                        className="flex items-center gap-1 hover:text-highlight "
+                      >
+                        {title}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
+              <Link
+                to={"/"}
+                className="flex items-center justify-center hover:text-highlight font-mono border border-highlight hover:bg-LightNavy active:bg-LightestNavy h-10 w-24 rounded duration-200"
+              >
+                Resume
+              </Link>
+            </ul>
+          </div>
         </div>
       </div>
       <ResponsiveHeader journal={false} />
-    </div>
+    </>
   );
 };
 

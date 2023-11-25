@@ -37,18 +37,18 @@ const Actions = ({
         <div className="flex gap-10 justify-center text-xl w-full ">
           {post.star ? (
             <button disabled={starLoad} onClick={() => handleStar(post._id)}>
-              <AiTwotoneStar className="text-ts" />
+              <AiTwotoneStar className="text-highlight duration-200" />
             </button>
           ) : (
             <button disabled={starLoad} onClick={() => handleStar(post._id)}>
-              <AiOutlineStar />
+              <AiOutlineStar className="hover:text-highlight duration-200" />
             </button>
           )}
           <Link to={`/edit-post/${post._id}`}>
-            <BiEdit className="cursor-pointer" />
+            <BiEdit className="cursor-pointer hover:text-highlight" />
           </Link>
           <button disabled={isLoading} onClick={() => handleDelete(post._id)}>
-            <MdDeleteSweep className="cursor-pointer" />
+            <MdDeleteSweep className="cursor-pointer hover:text-red-500 duration-200" />
           </button>
         </div>
       )}

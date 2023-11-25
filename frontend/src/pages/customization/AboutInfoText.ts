@@ -7,6 +7,7 @@ export const introTag =
 export const github = "https://github.com/Najmul11";
 export const linkedIn = "https://www.linkedin.com/in/nazpro/";
 export const whatsapp = "https://api.whatsapp.com/send?phone=8801886500072";
+export const discord = "https://discord.com/channels/@slise.web3";
 export const mail = "mailto:$najmulbinnurul@gmail.com";
 
 export const resume =

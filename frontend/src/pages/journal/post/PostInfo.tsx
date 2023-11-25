@@ -9,13 +9,13 @@ type Props = {
 const PostInfo = ({ title, details, date }: Props) => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex justify-between items-center">
-        <h2 className="font-semi text-lg capitalize ">{title}</h2>
-        <h2 className="font-semi text-sm italic  opacity-80">
+      <div className="lg:flex justify-between">
+        <h2 className="group-hover:text-highlight">{title}</h2>
+        <h2 className="font-semi text-[12px] italic  opacity-80 text-second">
           {date ? format(new Date(date), "dd MMM yyyy") : null}
         </h2>
       </div>
-      <p className="text-left">{details}</p>
+      <p className="text-left text-sm text-second">{details}</p>
     </div>
   );
 };
