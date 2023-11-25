@@ -48,7 +48,11 @@ export default {
         sm: "350px",
         md: "576px",
         lg: "786px",
+        lgtwo: "850px",
+        lgthree: "950px",
         xl: "992px",
+        xltwo: "1092px",
+        xlthree: "1160px",
         xxl: "1200px",
       },
 

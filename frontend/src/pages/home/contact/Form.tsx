@@ -30,7 +30,7 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className="md:w-[70%] lg:w-[90%]  mx-auto">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex gap-10 flex-col w-full"
@@ -52,7 +52,7 @@ const Form = () => {
               <input
                 {...field}
                 type="text"
-                className="absolute top-0 left-0 border-LightNavy px-3 border bg-transparent rounded h-full w-full lg:w-96 focus:outline-none"
+                className="absolute top-0 left-0 border-LightNavy px-3 border bg-transparent rounded h-full w-full xl:w-96 focus:outline-none"
               />
             )}
           />
@@ -74,7 +74,7 @@ const Form = () => {
               <input
                 {...field}
                 type="text"
-                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full lg:w-96 focus:outline-none "
+                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full xl:w-96 focus:outline-none "
               />
             )}
           />
@@ -95,7 +95,7 @@ const Form = () => {
             render={({ field }) => (
               <textarea
                 {...field}
-                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full lg:w-96 focus:outline-none resize-none py-2 "
+                className="absolute top-0 left-0 px-3 border border-LightNavy  bg-transparent rounded h-full w-full xl:w-96 focus:outline-none resize-none py-2 "
               />
             )}
           />

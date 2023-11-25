@@ -110,7 +110,7 @@ const Journal = () => {
               Favourites
             </button>
           </div>
-          <div className="columns-1 md:columns-2  gap-5 space-y-5 lg:mx-[10%] px-4 my-10">
+          <div className="columns-1 lgthree:columns-2  gap-5 space-y-5 lg:mx-[10%] px-4 my-10">
             {data?.data?.map((post: IPost, index: number) => (
               <div
                 key={index}

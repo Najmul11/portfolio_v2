@@ -1,12 +1,12 @@
 const NpxCard = () => {
   return (
-    <div className=" flex flex-col gap-10 lg:mt-12 text-center lg:text-left z-10">
+    <div className=" flex flex-col gap-10 xl:mt-12 text-center lg:text-left z-10">
       <div className="flex flex-col gap-5">
         <h1 className="text-xl text-center">
           Connect With me as a true <br className="hidden lg:block" /> JS
           Developer
         </h1>
-        <h2 className="text-second">
+        <h2 className="text-second xl:text-center">
           👇just hit this in your terminal with npm installed👇
         </h2>
       </div>

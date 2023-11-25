@@ -6,7 +6,7 @@ import { PiArrowSquareOut } from "react-icons/pi";
 type IProps = {
   live: string;
   code: string;
-  video: string;
+  video?: string;
 };
 
 const Icons = ({ live, code, video }: IProps) => {

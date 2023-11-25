@@ -9,7 +9,7 @@ type IProps = {
 
 const SpecificSkills = ({ title, skills }: IProps) => {
   return (
-    <div className="py-5 rounded  lg:w-96 w-full bg-LightNavy shadow-sm duration-200 hover:-translate-y-[1px] ">
+    <div className="py-5 rounded md:w-96  lg:w-96 xxl:w-96 w-full bg-LightNavy shadow-sm duration-200 hover:-translate-y-[1px] ">
       <h1 className="font-semi text-center text-lg">{title}</h1>
       <div className="grid grid-cols-3 gap-x-5 items-center justify-items-center gap-y-5 mt-12">
         {skills.map((skill, index) => {
