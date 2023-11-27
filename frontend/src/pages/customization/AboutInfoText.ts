@@ -11,4 +11,6 @@ export const discord = "https://discord.com/channels/@slise.web3";
 export const mail = "mailto:$najmulbinnurul@gmail.com";
 
 export const resume =
-  "https://drive.google.com/file/d/189CryrC04P2wYRqkSISabFM5xjrR3QXI/view?usp=sharing";
+  "https://drive.google.com/file/d/14Qeyv0n8JjN1_P4K7tidUP10OQccdY0b/view?usp=drive_link";
+
+export const lastUpdate = "Last Updated on: 16-Sep-2023";

@@ -18,7 +18,7 @@ type IFormData = {
 };
 
 const Login = () => {
-  useTitle("Login");
+  useTitle("Login", "- Najmul Hoque");
   const [userLogin, { isLoading }] = useUserLoginMutation();
 
   const { handleSubmit, control, formState } = useForm<IFormData>({

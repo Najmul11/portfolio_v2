@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { menus } from "./Header.constants";
 import { useEffect, useState } from "react";
 import ResponsiveHeader from "./ResponsiveHeader";
+import { resume } from "../../customization/AboutInfoText";
 
 const Header = () => {
   const [bg, setBg] = useState<string>("bg-transparent");
@@ -81,7 +82,8 @@ const Header = () => {
                 );
               })}
               <Link
-                to={"/"}
+                to={resume}
+                target="_blank"
                 className="flex items-center justify-center hover:text-highlight font-mono border border-highlight hover:bg-LightNavy active:bg-LightestNavy h-10 w-24 rounded duration-200"
               >
                 Resume

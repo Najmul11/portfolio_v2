@@ -19,7 +19,7 @@ type IFormData = {
 };
 
 const Dashboard = () => {
-  useTitle("Dashboard");
+  useTitle("Add Post", "- Najmul Hoque");
   const { control, handleSubmit, setValue, reset, watch, formState } =
     useForm<IFormData>({ resolver: yupResolver(postSchema) });
 

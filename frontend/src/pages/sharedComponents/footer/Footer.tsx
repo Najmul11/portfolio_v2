@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { github } from "../../customization/AboutInfoText";
+import { github, lastUpdate } from "../../customization/AboutInfoText";
 import SideIcons from "../sideIcons/SideIcons";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
         </Link>{" "}
       </div>
       <p className="text-second font-mono text-[13px] text-center">
-        Last Updated on: 16-Sep-2022
+        {lastUpdate}
       </p>
     </div>
   );

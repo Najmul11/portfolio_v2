@@ -33,7 +33,7 @@ type QueryState = {
 };
 
 const Journal = () => {
-  useTitle("Journal");
+  useTitle("Journal", "- Najmul Hoque");
   const [lightboxSrc, setlightboxSrc] = useState("");
   const [toggleLightbox, settoggleLightbox] = useState(false);
 

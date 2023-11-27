@@ -23,7 +23,7 @@ type IFormData = {
 };
 
 const EditPost = () => {
-  useTitle("Edit post");
+  useTitle("Edit post", "- Najmul Hoque");
   const { id } = useParams();
   const { data } = useGetSinglePostQuery(id ? id : undefined);
 

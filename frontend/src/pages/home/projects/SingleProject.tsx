@@ -17,7 +17,7 @@ const SingleProject = ({ project }: IProps) => {
     <div className="flex justify-center ">
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-2 bg-LightNavy  rounded  shadow-sm">
         <div
-          className={`${image} h-64 lg:h-72  md:w-[400px] lg:w-[250px] lgtwo:w-[325px] lgthree:w-[425px] xl:w-[450px] xltwo:w-[530px] xlthree:w-[590px]  xxl:w-[600px] bg-project1 bg-top ease-in-out duration-eight bg-cover hover:bg-bottom cursor-pointer rounded `}
+          className={`${image} h-64 lg:h-72  md:w-[400px] lg:w-[250px] lgtwo:w-[325px] lgthree:w-[425px] xl:w-[450px] xltwo:w-[530px] xlthree:w-[590px]  xxl:w-[600px] bg-project1 bg-top ease-in-out duration-[6000ms] bg-cover hover:bg-bottom cursor-pointer rounded `}
         >
           <div className="w-full h-full bg-highlight opacity-[.35] hover:opacity-0 duration-700"></div>
         </div>

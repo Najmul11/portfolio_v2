@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { BiHomeSmile } from "react-icons/bi";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineAppstore } from "react-icons/ai";
+import { resume } from "../../customization/AboutInfoText";
 
 const ResponsiveHeader = ({ journal }: { journal: boolean }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -56,7 +57,8 @@ const ResponsiveHeader = ({ journal }: { journal: boolean }) => {
               );
             })}
             <Link
-              to={"/"}
+              to={resume}
+              target="_blank"
               className="flex items-center justify-center hover:text-highlight font-mono border border-highlight hover:bg-LightNavy active:bg-LightestNavy h-10 w-24 rounded duration-200 col-span-3"
             >
               Resume
