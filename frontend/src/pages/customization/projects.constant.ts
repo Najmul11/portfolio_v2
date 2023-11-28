@@ -6,7 +6,8 @@ export const projects = [
       "A robust Learning Management System with ironclad Digital Rights Management for content security. Integrated with Stripe for secure transactions, it enables swift access to premium course videos. ",
     live: "https://learnify-v1.vercel.app/",
     code: "https://github.com/Najmul11/LMS-SkillDigger",
-    video: "https://learnify-v1.vercel.app/",
+    video:
+      "https://drive.google.com/file/d/1oyGxdD5Qt5nwlQwP4SMka73hqsJvMu7-/view?usp=sharing",
   },
   {
     title: "Imeginus",
@@ -15,7 +16,6 @@ export const projects = [
       "ImeGenius: A dynamic image marketplace with user authentication, cart management, and admin control for seamless digital image commerce. Elevates visual content experiences.",
     live: "https://imageniusbd.netlify.app/",
     code: "https://github.com/Najmul11/Imagenius-client",
-    video: "https://github.com/Najmul11/Imagenius-server",
   },
 
   {
