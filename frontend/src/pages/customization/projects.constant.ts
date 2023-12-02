@@ -17,16 +17,6 @@ export const projects = [
     live: "https://imageniusbd.netlify.app/",
     code: "https://github.com/Najmul11/Imagenius-client",
   },
-
-  {
-    title: "Comic Verse",
-    image: "bg-comic",
-    details:
-      "Comic Verse: An immersive digital library dedicated to comic book enthusiasts, offering a captivating showcase of illustrated stories and sequential art.",
-    live: "https://comic-verse.netlify.app/",
-    code: "https://github.com/Najmul11/comic-verse",
-  },
-
   {
     title: "Fragma",
     image: "bg-fragma",
