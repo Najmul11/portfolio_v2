@@ -7,11 +7,16 @@ type IProps = {
   live: string;
   code: string;
   video?: string;
+  index: number;
 };
 
-const Icons = ({ live, code, video }: IProps) => {
+const Icons = ({ live, code, video, index }: IProps) => {
   return (
-    <div className="flex justify-center lg:justify-end  text-xl font-semi lg:text-right gap-6 items-center">
+    <div
+      className={`${
+        (index + 1) % 2 === 0 ? "lg:pl-5 lg:justify-start" : "lg:justify-end"
+      } flex justify-center  text-xl font-semi lg:text-right gap-6 items-center`}
+    >
       {video && (
         <Link
           to={video}

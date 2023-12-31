@@ -7,7 +7,7 @@ const Projects = () => {
       <h2 className="text-4xl font-semi text-center">Projects</h2>
       <div className=" flex flex-col gap-10 mt-24">
         {projects.map((project, index) => (
-          <SingleProject key={index} project={project} />
+          <SingleProject key={index} project={project} index={index} />
         ))}
       </div>
     </div>
