@@ -58,7 +58,7 @@ const Header = () => {
             <Link to={"/"}>
               <h1 className="text-lg font-semi">Najmul</h1>
             </Link>
-            <ul className="flex gap-8 font-semi text-sm items-center">
+            <ul className="flex gap-8 font-semi text-[15px] items-center font-mono">
               {menus.map((menu, index) => {
                 const { title, icon, id } = menu;
                 return (
@@ -66,14 +66,14 @@ const Header = () => {
                     {title === "Journal" ? (
                       <Link
                         to={id}
-                        className="flex items-center gap-1  hover:text-highlight "
+                        className="flex items-center gap-1  hover:text-highlight duration-200 "
                       >
                         {icon} {title}
                       </Link>
                     ) : (
                       <a
                         href={`#${id}`}
-                        className="flex items-center gap-1 hover:text-highlight "
+                        className="flex items-center gap-1 hover:text-highlight duration-200 "
                       >
                         {title}
                       </a>
