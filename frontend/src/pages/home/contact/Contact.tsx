@@ -14,9 +14,9 @@ const Contact = () => {
           <NpxCard />
         </div>
         <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          className="w-full xl:w-1/2 px-4 lg:px-12"
+          // data-aos="fade-left"
+          // data-aos-duration="1000"
+          className="w-full xl:w-1/2 px-4 lg:px-12 "
         >
           <Form />
         </div>

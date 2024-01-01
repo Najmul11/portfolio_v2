@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 type ISkills = {
   title: string;
   icon: JSX.Element;
@@ -11,8 +12,8 @@ type IProps = {
 const SpecificSkills = ({ title, skills, index }: IProps) => {
   return (
     <div
-      data-aos={`${index === 0 ? "fade-right" : "fade-left"}`}
-      data-aos-duration="1000"
+      data-aos={`${index === 0 ? "fade-r" : ""}`}
+      // data-aos-duration="1000"
       className="py-5 rounded md:w-96  lg:w-96 xxl:w-96 w-full bg-LightNavy shadow-sm duration-600  "
     >
       <h1 className="font-semi text-center text-lg">{title}</h1>
