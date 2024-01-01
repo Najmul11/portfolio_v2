@@ -9,6 +9,9 @@ import ScrollTopAuto from "./pages/sharedComponents/scrollToTopAuto/ScrollTopAut
 import CursorGlow from "./pages/sharedComponents/CursorGlow/CursorGlow";
 import SideIcons from "./pages/sharedComponents/sideIcons/SideIcons";
 
+import "aos/dist/aos.css";
+import AOS from "aos";
+
 function App() {
   const dispatch = useAppDispatch();
 
@@ -25,6 +28,10 @@ function App() {
       }
     }
   }, [dispatch]);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>

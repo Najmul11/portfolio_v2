@@ -1,6 +1,10 @@
 const NpxCard = () => {
   return (
-    <div className=" flex flex-col gap-10 xl:mt-12 text-center lg:text-left z-10">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      className=" flex flex-col gap-10 xl:mt-12 text-center lg:text-left z-10"
+    >
       <div className="flex flex-col gap-5">
         <h1 className="text-xl text-center">
           Connect With me as a true <br className="hidden lg:block" /> JS

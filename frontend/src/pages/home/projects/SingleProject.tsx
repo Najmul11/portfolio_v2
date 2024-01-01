@@ -15,7 +15,11 @@ const SingleProject = ({ project, index }: IProps) => {
   const { details, image, title, live, video, code } = project;
 
   return (
-    <div className="flex justify-center ">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="flex justify-center "
+    >
       <div
         className={`flex flex-col  ${
           (index + 1) % 2 === 0 ? "lg:flex-row-reverse " : "lg:flex-row"
@@ -26,6 +30,8 @@ const SingleProject = ({ project, index }: IProps) => {
         >
           <div className="w-full h-full bg-highlight opacity-[.35] hover:opacity-0 duration-700"></div>
         </div>
+
+        {/* content */}
 
         <div className="flex justify-between flex-col gap-10 p-5 lg:pl-0 w-96 select-none ">
           <div

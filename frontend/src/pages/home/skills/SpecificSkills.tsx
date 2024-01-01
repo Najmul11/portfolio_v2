@@ -5,11 +5,16 @@ type ISkills = {
 type IProps = {
   title: string;
   skills: ISkills[];
+  index?: number;
 };
 
-const SpecificSkills = ({ title, skills }: IProps) => {
+const SpecificSkills = ({ title, skills, index }: IProps) => {
   return (
-    <div className="py-5 rounded md:w-96  lg:w-96 xxl:w-96 w-full bg-LightNavy shadow-sm duration-200 hover:-translate-y-[1px] ">
+    <div
+      data-aos={`${index === 0 ? "fade-right" : "fade-left"}`}
+      data-aos-duration="1000"
+      className="py-5 rounded md:w-96  lg:w-96 xxl:w-96 w-full bg-LightNavy shadow-sm duration-600  "
+    >
       <h1 className="font-semi text-center text-lg">{title}</h1>
       <div className="grid grid-cols-3 gap-x-5 items-center justify-items-center gap-y-5 mt-12">
         {skills.map((skill, index) => {

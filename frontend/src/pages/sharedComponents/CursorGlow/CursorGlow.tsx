@@ -20,8 +20,9 @@ const CursorGlow: React.FC = () => {
       className=" w-[600px] h-[600px] rounded-[50%] bg-gradient-to-t from-[#0f172a] via-[#1e2f57] to-[#0f172a] blur-[180px] -z-10"
       style={{
         position: "fixed",
-        left: cursorPosition.x - 200,
-        top: cursorPosition.y - 200,
+        left: cursorPosition.x - 300,
+        top: cursorPosition.y - 300,
+        pointerEvents: "none",
       }}
     ></div>
   );

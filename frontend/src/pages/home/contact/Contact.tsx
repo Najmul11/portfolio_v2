@@ -13,7 +13,11 @@ const Contact = () => {
         <div className=" w-full xl:w-1/2   lg:flex justify-center  relative px-4">
           <NpxCard />
         </div>
-        <div className="w-full xl:w-1/2 px-4 lg:px-12">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="w-full xl:w-1/2 px-4 lg:px-12"
+        >
           <Form />
         </div>
       </div>
