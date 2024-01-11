@@ -13,9 +13,9 @@ const IntroDetails = () => {
           </div>
           <h1 className="text-4xl lg:text-5xl font-semibold ">Najmul Hoque</h1>
 
-          <div className="flex flex-col gap-14 mt-10">
+          <div className="flex flex-col gap-10 mt-10">
             <p className="text-second text-center">{introTag}</p>
-            <div className="flex gap-2 justify-center">
+            <div className="flex gap-2 justify-center ">
               <Link
                 to={mail}
                 className="py-3 px-8 border border-highlight text-highlight font-thin text-md hover:bg-LightNavy font-mono rounded active:bg-LightestNavy"
