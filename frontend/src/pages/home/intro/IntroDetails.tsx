@@ -18,7 +18,7 @@ const IntroDetails = () => {
             <div className="flex gap-2 justify-center ">
               <Link
                 to={mail}
-                className="py-3 px-8 border border-highlight text-highlight font-thin text-md hover:bg-LightNavy font-mono rounded active:bg-LightestNavy"
+                className="py-3 px-8 border border-highlight text-highlight font-thin text-md hover:bg-LightNavy font-mono rounded active:bg-LightestNavy duration-200"
               >
                 Get In Touch
               </Link>

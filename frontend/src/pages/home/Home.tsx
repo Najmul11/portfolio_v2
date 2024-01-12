@@ -8,7 +8,8 @@ import Skills from "./skills/Skills";
 const Home = () => {
   useTitle("Najmul Hoque");
   return (
-    <div>
+    // overflow hidden for animation , left right animation overflowing
+    <div className="overflow-hidden">
       <Intro />
       <About />
       <Skills />
