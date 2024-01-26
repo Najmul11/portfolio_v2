@@ -9,6 +9,8 @@ import Dashboard from "../pages/login/Dashboard";
 import EditPost from "../pages/login/EditPost";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoutes from "./AdminRoutes";
+import CoffeeLayout from "../layout/CoffeeLayout";
+import BuyMeCoffee from "../pages/BuyMeCoffee/BuyMeCoffee";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +24,16 @@ export const router = createBrowserRouter([
           {
             path: "/",
             element: <Home />,
+          },
+        ],
+      },
+      {
+        path: "/buy-me-coffee",
+        element: <CoffeeLayout />,
+        children: [
+          {
+            path: "/buy-me-coffee",
+            element: <BuyMeCoffee />,
           },
         ],
       },
