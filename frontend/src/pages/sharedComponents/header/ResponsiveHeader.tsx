@@ -4,7 +4,6 @@ import { BiHomeSmile } from "react-icons/bi";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineAppstore } from "react-icons/ai";
 import { resume } from "../../customization/AboutInfoText";
-import { CiCoffeeCup } from "react-icons/ci";
 
 const ResponsiveHeader = ({ journal }: { journal: boolean }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);

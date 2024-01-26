@@ -1,7 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 import { Outlet } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { setUser } from "./redux/slices/userSlice";
 import jwtDecode from "jwt-decode";
 import { useAppDispatch } from "./redux/hooks";
