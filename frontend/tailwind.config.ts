@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -57,7 +58,6 @@ export default {
       },
 
       backgroundImage: {
-        icons: "url('/src/assets/mainIconsdark.svg')",
         profile: "url('/src/assets/profile.jpg')",
         learnify: "url('/src/assets/project1.png')",
         imagenius: "url('/src/assets/project2.png')",
@@ -70,6 +70,22 @@ export default {
 
       width: {
         project: "500px",
+      },
+
+      animation: {
+        spotlight: "spotlight 1s ease .75s 1 forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
     },
   },
