@@ -12,7 +12,7 @@ import SingleProject from "./SingleProject";
 const TabSwitch = () => {
   return (
     <Tabs defaultValue="web2" className="">
-      <TabsList className="mx-auto flex justify-center w-96 lg:w-4/5 lgtwo:w-2/3 lgthree:w-4/5 xl:w-3/4 xltwo:w-2/3 xxl:w-1/2 bg-LightNavy font-semibold mb-8 !py-0 ">
+      <TabsList className="mx-auto flex justify-center w-96 lg:w-4/5 lgtwo:w-2/3 lgthree:w-4/5 xl:w-3/4 xltwo:w-2/3 xxl:w-1/2 bg-LightNavy font-semibold mb-8 ">
         <TabsTrigger
           value="web2"
           className="w-1/2 font-bold  data-[state=active]:bg-white/80 "

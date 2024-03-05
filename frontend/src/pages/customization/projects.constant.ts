@@ -29,12 +29,12 @@ export const web2Projects = [
     code: "https://github.com/Najmul11/Imagenius-client",
   },
   {
-    title: "Fragma",
-    image: "bg-fragma",
+    title: "Tiny Link",
+    image: "bg-tinyLink",
     details:
-      "Fragma: Unveil a world of exquisite fragrances and exclusive offerings on this niche, designer fragrance resale platform, powered by Firebase, designed for scent enthusiasts.",
-    live: "https://product-resale-43710.firebaseapp.com/",
-    code: "https://github.com/Najmul11/Fragma-Fragrence-client",
+      "Tiny Link provides a sleek platform for managing and sharing long URLs. Users can shorten URLs, set expiry dates, limit clicks, and track views. QR codes are also available for easy access.",
+    live: "https://tiny-link-frontend.vercel.app/",
+    code: "https://github.com/Najmul11/tiny-link",
   },
 ];
 

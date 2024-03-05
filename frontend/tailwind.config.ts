@@ -61,6 +61,7 @@ export default {
         profile: "url('/src/assets/profile.jpg')",
         learnify: "url('/src/assets/project1.png')",
         imagenius: "url('/src/assets/project2.png')",
+        tinyLink: "url('/src/assets/project3.png')",
         fragma: "url('/src/assets/project4.png')",
       },
 
