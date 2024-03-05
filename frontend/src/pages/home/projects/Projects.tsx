@@ -1,4 +1,3 @@
-import SingleProject from "./SingleProject";
 import TabSwitch from "./TabSwitch";
 
 const Projects = () => {
@@ -6,14 +5,9 @@ const Projects = () => {
     <div className="md:w-[80%] lg:w-5/6  xl:w-4/6 mx-auto py-16 " id="projects">
       <h2 className="text-4xl font-semi text-center">Projects</h2>
 
-      <div className="mt-24 mx-auto ">
+      <div className="mt-20 mx-auto ">
         <TabSwitch />
       </div>
-      {/* <div className=" flex flex-col gap-10  ">
-        {projects.map((project, index) => (
-          <SingleProject key={index} project={project} />
-        ))}
-      </div> */}
     </div>
   );
 };
