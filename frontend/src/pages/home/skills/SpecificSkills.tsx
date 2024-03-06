@@ -9,29 +9,20 @@ type IProps = {
   index?: number;
 };
 
-const SpecificSkills = ({ title, skills, index }: IProps) => {
+const SpecificSkills = ({ title, skills }: IProps) => {
   return (
-    <div
-      data-aos={`${index === 0 ? "fade-right" : "fade-left"}`}
-      data-aos-duration="800"
-      className="py-5 rounded md:w-96  lg:w-96 xxl:w-96 w-full bg-LightNavy shadow-sm duration-600  "
-    >
-      <h1 className="font-semi text-center text-lg">{title}</h1>
-      <div className="grid grid-cols-3 gap-x-5 items-center justify-items-center gap-y-5 mt-12">
-        {skills.map((skill, index) => {
-          const { icon, title } = skill;
-          return (
-            <div
-              key={index}
-              className="text-5xl cursor-pointer hover:-translate-y-1 transition-transform duration-200 relative group"
-            >
-              {icon}
-              <div className="absolute top-[-18px] text-highlight opacity-0 group-hover:opacity-100 duration-300">
-                <p className="text-sm">{title}</p>
-              </div>
-            </div>
-          );
-        })}
+    <div className="p-5 bg-LightNavy/70 rounded hover:scale-105 transition-transform duration-300">
+      <h3 className="text-xl font-semi text-center">{title}</h3>
+      <div className="flex flex-wrap justify-center gap-3 lg:gap-5 mt-8 mb-4">
+        {skills.map((skill, i) => (
+          <div
+            key={i}
+            className=" flex items-center gap-2 py-2 border px-3 border-second/60 rounded-md cursor-pointer hover:bg-second hover:text-LightNavy duration-200"
+          >
+            <span className="text-2xl">{skill.icon}</span>
+            <p className="">{skill.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

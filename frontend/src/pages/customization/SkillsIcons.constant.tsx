@@ -13,6 +13,7 @@ import {
   SiPrisma,
   SiRedis,
 } from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
 
 export const frontend = [
   {
@@ -32,6 +33,10 @@ export const frontend = [
     icon: <SiNextdotjs className="" />,
   },
   {
+    title: "Redux",
+    icon: <TbBrandRedux className="text-purple-500" />,
+  },
+  {
     title: "Tailwind",
     icon: <SiTailwindcss className="text-tailwind" />,
   },
@@ -44,26 +49,28 @@ export const frontend = [
 export const backend = [
   {
     title: "NodeJs",
-    icon: <BiLogoNodejs className="text-5xl text-node" />,
+    icon: <BiLogoNodejs className=" text-node" />,
   },
   {
     title: "Express",
-    icon: <SiExpress className="text-5xl" />,
+    icon: <SiExpress className="" />,
   },
   {
     title: "MongoDB",
-    icon: <BiLogoMongodb className="text-5xl text-mongo" />,
+    icon: <BiLogoMongodb className=" text-mongo" />,
   },
   {
     title: "PostgreSQL",
-    icon: <BiLogoPostgresql className="text-5xl text-postgre" />,
+    icon: <BiLogoPostgresql className=" text-postgre" />,
   },
   {
     title: "Prisma",
-    icon: <SiPrisma className="text-5xl text-prisma" />,
+    icon: <SiPrisma className=" text-prisma" />,
   },
   {
     title: "Redis",
-    icon: <SiRedis className="text-5xl text-redis" />,
+    icon: <SiRedis className=" text-redis" />,
   },
 ];
+
+export const others = [];
