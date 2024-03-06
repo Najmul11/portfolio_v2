@@ -1,4 +1,5 @@
 import web3Project1 from "../../assets/web3Projects/project1.png";
+import web3Project2 from "../../assets/web3Projects/soon.jpg";
 export type TProject = {
   project: {
     title: string;
@@ -47,9 +48,19 @@ export const web3Projects = [
     title: "Buy me a coffee",
     image: web3Project1,
     details:
-      "A robust Learning Management System with ironclad Digital Rights Management for content security. Integrated with Stripe for secure transactions, it enables swift access to premium course videos. ",
-    live: "https://learnify-v1.vercel.app/",
-    code: "https://github.com/Najmul11/LMS-SkillDigger",
+      "The crypto-friendly 'Buy Me a Coffee' app! Easily receive support from friends and followers with virtual coffee donations. Stay fueled and inspired, one sip at a time!",
+    live: "https://buy-me-coffee-sigma.vercel.app/",
+    code: "https://github.com/Najmul11/buyMe-Coffee",
     techs: ["Next.js", "Solidity", "Ether.js"],
+  },
+
+  {
+    title: "FundForge",
+    image: web3Project2,
+    details:
+      " A decentralized crowdfunding platform on Polygon. Users create campaigns, set funding goals, and when targets are met, funds are automatically released for withdrawal.",
+    live: "",
+    code: "",
+    techs: ["Next.js", "Solidity", "Thirdweb"],
   },
 ];
