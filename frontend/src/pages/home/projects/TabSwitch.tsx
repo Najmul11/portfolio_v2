@@ -9,6 +9,7 @@ import {
   TabsTrigger,
 } from "../../../components/ui/tabs";
 import SingleProject from "./SingleProject";
+import Web3Project from "./Web3Project";
 const TabSwitch = () => {
   return (
     <Tabs defaultValue="web2" className="">
@@ -36,9 +37,9 @@ const TabSwitch = () => {
         </div>
       </TabsContent>
       <TabsContent value="web3">
-        <div className=" flex flex-col gap-10  ">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-screen-xl  mx-auto ">
           {web3Projects.map((project, index) => (
-            <SingleProject key={index} project={project} />
+            <Web3Project key={index} project={project} />
           ))}
         </div>
       </TabsContent>
