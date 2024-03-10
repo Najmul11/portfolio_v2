@@ -9,7 +9,7 @@ const Skills = () => {
     >
       <h2 className="text-4xl font-semi text-center">Skills</h2>
 
-      <div className="columns-2 max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto  mt-24 px-4">
+      <div className=" max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto  mt-24 px-4">
         <SpecificSkills title="Frontend" skills={frontend} />
         <SpecificSkills title="Backend" skills={backend} />
 

@@ -6,7 +6,7 @@ const Web3Project = ({ project }: TProject) => {
   const { details, image, title, live, video, code, techs } = project;
   return (
     <CardContainer className="inter-var px-4 lg:px-[unset]">
-      <CardBody className="bg-LightNavy relative group/card     w-auto lg:w-[30rem]  rounded-xl p-5 ">
+      <CardBody className="bg-LightNavy relative group/card  w-auto  rounded-xl p-5 ">
         <CardItem translateZ="50" className="text-center font-semi text-lg">
           {title}
         </CardItem>

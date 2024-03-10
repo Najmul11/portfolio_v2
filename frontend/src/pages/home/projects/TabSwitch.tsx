@@ -37,7 +37,7 @@ const TabSwitch = () => {
         </div>
       </TabsContent>
       <TabsContent value="web3">
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10  max-w-screen-xl  mx-auto ">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center max-w-screen-xl  mx-auto  ">
           {web3Projects.map((project, index) => (
             <Web3Project key={index} project={project} />
           ))}
