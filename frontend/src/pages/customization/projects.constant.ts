@@ -31,7 +31,7 @@ export const web2Projects = [
       "ImeGenius: A dynamic image marketplace with user authentication, cart management, and admin control for seamless digital image commerce. Elevates visual content experiences.",
     live: "https://imageniusbd.netlify.app/",
     code: "https://github.com/Najmul11/Imagenius-client",
-    techs: ["Next.js", "Node.js", "PostgreSQL", "Prisma"],
+    techs: ["Next.js", "Node.js", "MongoDB"],
   },
   {
     title: "Tiny Link",
