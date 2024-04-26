@@ -18,7 +18,7 @@ export const web2Projects = [
     image: "bg-learnify",
     details:
       "A robust Learning Management System with ironclad Digital Rights Management for content security. Integrated with Stripe for secure transactions, it enables swift access to premium course videos. ",
-    live: "https://learnify-v1.vercel.app/",
+    live: "https://learnify-frontend-new.vercel.app",
     code: "https://github.com/Najmul11/LMS-SkillDigger",
     video:
       "https://drive.google.com/file/d/1oyGxdD5Qt5nwlQwP4SMka73hqsJvMu7-/view?usp=sharing",
