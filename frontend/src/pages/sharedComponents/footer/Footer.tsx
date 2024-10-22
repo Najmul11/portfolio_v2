@@ -8,21 +8,15 @@ const Footer = () => {
       <SideIcons isFooter={true} />
       <div className=" font-mono text-second text-[13px] flex flex-col lg:flex-row items-center justify-center ">
         <Link
-          to={"https://github.com/bchiang7/v4"}
-          className="hover:text-highlight duration-200"
-        >
-          Inspired From Brittany Chiang |
-        </Link>{" "}
-        <Link
           to={github}
           className="hover:text-highlight duration-200 mr-5 lg:mr-0"
         >
-          &nbsp;&nbsp;| Designed & Built by Najmul
+          Designed & Built by Najmul&nbsp;&nbsp;|
         </Link>{" "}
+        <p className="text-second font-mono text-[13px] text-center">
+          &nbsp;&nbsp;{lastUpdate}
+        </p>
       </div>
-      <p className="text-second font-mono text-[13px] text-center">
-        {lastUpdate}
-      </p>
     </div>
   );
 };

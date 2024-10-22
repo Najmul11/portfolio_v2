@@ -13,4 +13,4 @@ export const mail = "mailto:hi@najmulhoque.me";
 export const resume =
   "https://drive.google.com/file/d/1HPDKl35DAokYwtJdwsj4w3vWVDZMbB2d/view?usp=drive_link";
 
-export const lastUpdate = "Last Updated on: 16-Sep-2023";
+export const lastUpdate = "Last Updated on: 24-Sep-2024";

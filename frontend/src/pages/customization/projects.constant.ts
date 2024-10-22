@@ -1,5 +1,6 @@
 import web3Project1 from "../../assets/web3Projects/project1.png";
-import web3Project2 from "../../assets/web3Projects/soon.jpg";
+import web3Project2 from "../../assets/web3Projects/Article.png";
+import web3Project3 from "../../assets/web3Projects/soon.jpg";
 export type TProject = {
   project: {
     title: string;
@@ -53,10 +54,19 @@ export const web3Projects = [
     code: "https://github.com/Najmul11/buyMe-Coffee",
     techs: ["Next.js", "Solidity", "Ether.js"],
   },
+  {
+    title: "Article",
+    image: web3Project2,
+    details:
+      "Article is a decentralized blog app that allows users to create, update, and delete blogs, letting them share their voices without boundaries, censorship, or central control.",
+    live: "https://solana-article.netlify.app/",
+    code: "https://github.com/Najmul11/solana-blog",
+    techs: ["ReactJs", "Rust", "Anchor"],
+  },
 
   {
     title: "FundForge",
-    image: web3Project2,
+    image: web3Project3,
     details:
       " A decentralized crowdfunding platform on Polygon. Users create campaigns, set funding goals, and when targets are met, funds are automatically released for withdrawal.",
     live: "",
